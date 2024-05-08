@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">=1.3.0"
+  required_version = ">=1.7.0"
   required_providers {
     azurerm = {
       "source" = "hashicorp/azurerm"
@@ -18,7 +18,7 @@ resource "random_string" "uniquestring" {
   special = false
   upper   = false
 }
-
+#
 resource "azurerm_resource_group" "rg" {
   name     = "811-f50cfa29-provide-continuous-delivery-with-gith"
   location = "southcentralus"
